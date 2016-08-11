@@ -6,6 +6,7 @@ public class BaseClass
 
     protected int CheckNowMonth = 0;  //月チェック用変数
 
+    //月が替わったか調べる
     protected bool CheckChangeMonth()
     {
         if (CheckNowMonth == STATIC_SPACE.StaticValue.Month)
@@ -20,13 +21,10 @@ public class BaseClass
         }
     }
 
+    //建設費を支払う
     protected void PayCost(int cost)
     {
         STATIC_SPACE.StaticValue.NationalTreasury -= cost;
     }
 
-    protected void Gain(int profit)
-    {
-        STATIC_SPACE.StaticValue.NationalTreasury = profit;
-    }
 }
