@@ -16,18 +16,16 @@ public class FactoryClass : BaseClass {
         }
     }
 
-    //維持費を支払う
-    protected void PayRunningCost(int runningcost)
-    {
-        STATIC_SPACE.StaticValue.NationalTreasury -= runningcost;
-    }
-
     //電力を受容する
     protected void SetPower()
     {
         if(STATIC_SPACE.StaticValue.ContractHamahimoDenryokuFlag)
         {
             GetPower = CONSTATIC_SPACE.ConstaticValue.PowerGanaration_of_Hamahimo;
+        }
+        else if(Wind_PowerGeneratorFlag)
+        {
+            GetPower = CONSTATIC_SPACE.ConstaticValue.WindPowerGenerate;
         }
         else
         {
