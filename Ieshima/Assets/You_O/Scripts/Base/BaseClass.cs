@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BaseClass
+public class BaseClass : MonoBehaviour
 {
 
     protected int CheckNowMonth = 0;  //月チェック用変数
