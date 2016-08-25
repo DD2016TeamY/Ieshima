@@ -21,7 +21,7 @@ public class BaseClass : MonoBehaviour
         }
     }
 
-    //建設費を支払う
+    //コストを支払う
     protected void PayCost(int cost)
     {
         STATIC_SPACE.StaticValue.NationalTreasury -= cost;
