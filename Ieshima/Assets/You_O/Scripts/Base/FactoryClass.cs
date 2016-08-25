@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FactoryClass : MonoBehaviour {
+public class FactoryClass : BaseClass {
     protected int ConstructionTime = -1; //建設期間
     protected int GetPower = 0; //取得電力
     protected bool Wind_PowerGeneratorFlag = false; //風力発電機フラグ
