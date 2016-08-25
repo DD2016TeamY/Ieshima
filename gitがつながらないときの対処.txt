@@ -1,0 +1,7 @@
+github‚ª‚Â‚È‚ª‚ç‚È‚­‚È‚Á‚½‚ç
+
+‡@git remote rm origin
+git‚Ö‚ÌURL‚ğÁ‚·
+
+‡Agit remote add origin github‚Ö‚ÌURL
+git‚Ö‚ÌURL‚ğ’£‚è‚È‚¨‚·
