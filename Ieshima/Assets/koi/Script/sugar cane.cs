@@ -4,15 +4,33 @@ using STATIC_SPACE;
 using CONSTATIC_SPACE;
 
 public class sugarcane : FarmClass {
-
+    protected void GrawUp();
+    protected int MonthChangeCheck;
+    public GameObject BrawnSugarFactory; //隣接工場
 	// Use this for initialization
 	void Start () {
-        
-	
-	}
+
+        HarvestDays = CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_Sugarcane;
+        MonthChangeCheck = STATIC_SPACE.StaticValue.Month;
+    }
 	
 	// Update is called once per frame
 	void Update () {
-	
+        if (STATIC_SPACE.StaticValue.Month == MonthChangeCheck)
+        {
+
+        }
+        else
+        {
+            GrawUp();      
+            if (GrawUp()) {
+            CheckHarvestDay();
+                if(){
+                FactoryFlag;
+                }
+                      }
+                }
+        if(){
+        }
 	}
 }
