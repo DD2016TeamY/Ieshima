@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/sunakawa/scene/abcd.unity
-=======
-- path: Assets/satsuki/Scene/ore.unity
->>>>>>> 51f4b362f10b3819436b34863cac6498671099be
   isLoaded: 1
   isActive: 1

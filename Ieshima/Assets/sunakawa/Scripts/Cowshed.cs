@@ -10,7 +10,6 @@ public class Cowshed : FarmClass
     void Start()
     {
         HarvestDays = CONSTATIC_SPACE.ConstaticValue.RearingDays_of_Cow;
-
     }
 
     // Update is called once per frame
