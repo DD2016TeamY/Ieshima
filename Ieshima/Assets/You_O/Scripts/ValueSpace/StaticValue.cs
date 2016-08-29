@@ -14,8 +14,8 @@ namespace STATIC_SPACE
         public static List<int> PopulationGrowthRatePerMonth;  //各月の人口増加率
         public static bool ContractHamahimoDenryokuFlag = false;   //浜紐電力との契約フラグ
         public static bool TyphoonFlag = false;    //台風フラグ
-        public static int BrandPower_of_Cow = 0;   //牛のブランド力
-        public static int BrandPower_of_Rum = 0;   //ラム酒のブランド力
+        public static int BrandPower_of_Cow = 1;   //牛のブランド力
+        public static int BrandPower_of_Rum = 1;   //ラム酒のブランド力
         public static int Tourists = 0;    //観光客数
 
         void Start()
