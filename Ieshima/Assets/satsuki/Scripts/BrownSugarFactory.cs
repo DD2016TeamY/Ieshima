@@ -38,9 +38,9 @@ public class BrownSugarFactory : FactoryClass {
         }
 	}
 
-    void OnTriggerEnter()
+    void OnTriggerEnter(SugarcaneFarm other)
     {
- 
+         //Br= this.gameObject;
     }
 
 
