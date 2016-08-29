@@ -18,27 +18,26 @@ public class BrownSugarFactory : FactoryClass {
 	void Update () {
         if (ConstructedFlag)
         {
-            if (CheckChangeMonth()){}
-            else
+            if (CheckChangeMonth())
             {
                 STATIC_SPACE.StaticValue.NationalTreasury += SugarcaneGrowth;
                 SugarcaneGrowth = 0;
-                STATIC_SPACE.StaticValue.NationalTreasury -= CONSTATIC_SPACE.ConstaticValue.
-
+                STATIC_SPACE.StaticValue.NationalTreasury -= CONSTATIC_SPACE.ConstaticValue.BrownSugarFactoryRunningCost;
             }
         }
         else 
-        { 
-            if()
+        {
+            if (CheckChangeMonth())
             {
-
-            }
-            else
-            {
-
+                --ConstructionTime;
+                if (ConstructionTime <= 0)
+                {
+                    ConstructedFlag = true;
+                }
             }
         }
 	}
+    
 
 
 
