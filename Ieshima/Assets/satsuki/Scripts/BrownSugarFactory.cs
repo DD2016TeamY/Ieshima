@@ -37,7 +37,11 @@ public class BrownSugarFactory : FactoryClass {
             }
         }
 	}
-    
+
+    void OnTriggerEnter()
+    {
+ 
+    }
 
 
 
