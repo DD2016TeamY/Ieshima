@@ -3,7 +3,7 @@ using System.Collections;
 using STATIC_SPACE;
 using CONSTATIC_SPACE;
 
-public class Hotel : FarmClass
+public class Hotel : FactoryClass
 {
 
     // Use this for initialization
