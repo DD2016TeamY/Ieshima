@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RumFactry : MonoBehaviour {
+public class RumFactry : FactoryClass {
 
 	// Use this for initialization
 	void Start () {

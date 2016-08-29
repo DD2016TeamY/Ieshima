@@ -38,7 +38,7 @@ public class BrownSugarFactory : FactoryClass {
         }
 	}
 
-    void OnTriggerEnter(SugarcaneFarm other)
+    void OnTriggerEnter(Collider other)
     {
          //Br= this.gameObject;
     }
