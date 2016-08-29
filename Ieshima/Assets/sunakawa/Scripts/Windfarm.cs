@@ -37,8 +37,12 @@ public class Windfarm : FactoryClass
     }
     void OnTriggerStay(Collider other)
     {
-        if (CheckChangeMonth || ConstructedFlag)
+        if (CheckChangeMonth()&& ConstructedFlag)
         {
+            if (other.gameObject.tag == "RumFactory")
+            {
+         //       if(other.gameObject.GetComponent.)
+            }
 
         }
     }
