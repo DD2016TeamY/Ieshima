@@ -1,9 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-﻿using UnityEngine;
-using System.Collections;
-﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 
 public class FactoryClass : BaseClass {
@@ -20,7 +16,8 @@ public class FactoryClass : BaseClass {
             ConstructionTime--;
         }
     }
-
+  
+    //電力を受容する
     protected void SetPower()
     {
         if (STATIC_SPACE.StaticValue.ContractHamahimoDenryokuFlag)
