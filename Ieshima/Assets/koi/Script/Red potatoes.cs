@@ -3,7 +3,8 @@ using System.Collections;
 using STATIC_SPACE;
 using CONSTATIC_SPACE;
 
-public class Redpotatoes : MonoBehaviour {
+public class Redpotatoes : FarmClass
+{
 
 	// Use this for initialization
 	void Start () {
