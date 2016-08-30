@@ -42,7 +42,9 @@ public class BrownSugarFactory : FactoryClass {
     {
         if (sugarcanefarm.gameObject.tag == "SugacaneFarm")
         {
-            sugarcanefarm.gameObject.GetComponent<
+            sugarcanefarm.gameObject.GetComponent<sugarcane>().BrawnSugarFactory = this.gameObject;
+
+            sugarcanefarm.gameObject.GetComponent<sugarcane>().FactoryFlag = true;
         }
 
     }

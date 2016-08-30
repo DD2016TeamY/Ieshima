@@ -5,7 +5,7 @@ public class FarmClass : BaseClass {
 
     protected int ProduceGrowth = 0;    //作物の成長度
     protected int HarvestDays;  //収穫期間
-    protected bool FactoryFlag = false; //隣接工場の存在フラグ
+    public bool FactoryFlag = false; //隣接工場の存在フラグ
 
     //作物の成長
     protected void GrowUp()
@@ -19,7 +19,7 @@ public class FarmClass : BaseClass {
         STATIC_SPACE.StaticValue.NationalTreasury += ProduceGrowth * profit;
     }
 
-    protected void Gain(int profit , int brand_power = 1)
+    protected void GainBrand(int profit , int brand_power = 1)
     {
         STATIC_SPACE.StaticValue.NationalTreasury += ProduceGrowth * profit * brand_power;
     }
