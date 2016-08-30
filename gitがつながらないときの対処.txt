@@ -8,3 +8,15 @@ gitへのURLを張りなおす
 
 魔法のコマンド
 git ○○ origin master
+
+
+
+
+
+コマンドの流れ
+
+1git add .
+2git commit
+3git pull
+4git push
+
