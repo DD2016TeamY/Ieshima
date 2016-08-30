@@ -13,7 +13,7 @@ public class FarmClass : BaseClass {
         ProduceGrowth += UnityEngine.Random.Range(1, CONSTATIC_SPACE.ConstaticValue.MaximumGrowth);
     }
 
-    //利益の収集<<<<<<< HEAD
+    //利益の収集
     protected void Gain(int profit)
     {
         STATIC_SPACE.StaticValue.NationalTreasury += ProduceGrowth * profit;
