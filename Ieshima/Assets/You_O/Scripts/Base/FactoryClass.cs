@@ -45,7 +45,7 @@ public class FactoryClass : BaseClass {
 
     //電力を受容する
 <<<<<<< HEAD
-=======
+=======0
     }
 
     //電力を受容する

@@ -21,15 +21,13 @@ public class sugarcane : FarmClass
     void Update() {
         if (STATIC_SPACE.StaticValue.Month == MonthChangeCheck)
         {
-
-        }
-        else
-        {
-            GrawUp();      
-            if () {
-               CheckHarvestDay();
+            GrawUp();
+        }    
+            if (CheckHarvestDay()) {
+               
+            }
                 if(){
-                FactoryFlag = false;
+                FactoryFlag  = false;
                      }
                 else{
                 Gain ( CONSTATIC_SPACE.ConstaticValue.Price_of_Sugarcane);
@@ -37,5 +35,3 @@ public class sugarcane : FarmClass
                 }
             }
         }
-    }
-}
