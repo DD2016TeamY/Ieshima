@@ -38,9 +38,13 @@ public class BrownSugarFactory : FactoryClass {
         }
 	}
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider sugarcanefarm)
     {
-         //Br= this.gameObject;
+        if (sugarcanefarm.gameObject.tag == "SugacaneFarm")
+        {
+            sugarcanefarm.gameObject.GetComponent<
+        }
+
     }
 
 
