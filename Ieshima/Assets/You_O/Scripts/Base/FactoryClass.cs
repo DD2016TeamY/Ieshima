@@ -19,12 +19,6 @@ public class FactoryClass : BaseClass {
         }
     }
 
-    //維持費を支払う
-    protected void PayRunningCost(int runningcost)
-    {
-        STATIC_SPACE.StaticValue.NationalTreasury -= runningcost;
-    }
-
     //電力を受容する
     protected void SetPower()
     {
