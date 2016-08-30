@@ -1,5 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+﻿using UnityEngine;
+using System.Collections;
+﻿using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 public class FactoryClass : BaseClass {
@@ -7,10 +11,8 @@ public class FactoryClass : BaseClass {
     protected int GetPower = 0; //取得電力
     protected bool Wind_PowerGeneratorFlag = false; //風力発電機フラグ
     protected bool ConstructedFlag = false; //建設済みフラグ
-
     public List<GameObject> Wind_PowerGenerators = new List<GameObject>();
 
-    //建設期間を減らす
     protected void DecreaseConstructionTime()
     {
         if(ConstructionTime > 0)
@@ -19,13 +21,6 @@ public class FactoryClass : BaseClass {
         }
     }
 
-    //維持費を支払う
-    protected void PayRunningCost(int runningcost)
-    {
-        STATIC_SPACE.StaticValue.NationalTreasury -= runningcost;
-    }
-
-    //電力を受容する
     protected void SetPower()
     {
         if (STATIC_SPACE.StaticValue.ContractHamahimoDenryokuFlag)
