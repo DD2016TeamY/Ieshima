@@ -9,7 +9,7 @@ using System.Collections.Generic;
 public class FactoryClass : BaseClass {
     protected int ConstructionTime = -1; //建設期間
     protected int GetPower = 0; //取得電力
-    protected bool Wind_PowerGeneratorFlag = false; //風力発電機フラグ
+    public bool Wind_PowerGeneratorFlag = false; //風力発電機フラグ
     protected bool ConstructedFlag = false; //建設済みフラグ
     public List<GameObject> Wind_PowerGenerators = new List<GameObject>();
 
