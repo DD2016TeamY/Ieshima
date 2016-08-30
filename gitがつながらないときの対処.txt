@@ -1,0 +1,10 @@
+githubがつながらなくなったら
+
+①git remote rm origin
+gitへのURLを消す
+
+②git remote add origin githubへのURL
+gitへのURLを張りなおす
+
+魔法のコマンド
+git ○○ origin master

@@ -13,16 +13,15 @@ public class FarmClass : BaseClass {
         ProduceGrowth += UnityEngine.Random.Range(1, CONSTATIC_SPACE.ConstaticValue.MaximumGrowth);
     }
 
-    //利益の収集
-<<<<<<< HEAD
+    //利益の収集<<<<<<< HEAD
     protected void Gain(int profit)
     {
         STATIC_SPACE.StaticValue.NationalTreasury += ProduceGrowth * profit;
-=======
-    protected void Gain(int profit , int brand_power = 1)
+        =======
+        protected void Gain(int profit , int brand_power = 1)
     {
         STATIC_SPACE.StaticValue.NationalTreasury += ProduceGrowth * profit * brand_power;
->>>>>>> 22a789ee534c675f93e5a370a2661e3c1b224ec0
+            >>>>>>> 22a789ee534c675f93e5a370a2661e3c1b224ec0
     }
 
     //収穫できるかどうか調べる
