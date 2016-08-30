@@ -6,16 +6,16 @@ using System.Collections.Generic;
 
 public class Windfarm : FactoryClass
 {
-    public　GameObject　FactorysList;
+    public GameObject FactorysList;
 
     // Use this for initialization
     void Start()
     {
-       PayCost(CONSTATIC_SPACE.ConstaticValue.Wind_PowerGeneratorCost);
+        PayCost(CONSTATIC_SPACE.ConstaticValue.Wind_PowerGeneratorCost);
 
-       ConstructionTime = CONSTATIC_SPACE.ConstaticValue.WindPowerGenerate;
-       
-       FactorysList = new GameObject();
+        ConstructionTime = CONSTATIC_SPACE.ConstaticValue.WindPowerGenerate;
+
+        FactorysList = new GameObject();
     }
 
     // Update is called once per frame
@@ -24,7 +24,8 @@ public class Windfarm : FactoryClass
         if (ConstructedFlag)
         {
 
-        }else if(CheckChangeMonth())
+        }
+        else if (CheckChangeMonth())
         {
             DecreaseConstructionTime();
 
@@ -35,13 +36,19 @@ public class Windfarm : FactoryClass
             }
         }
     }
+
     void OnTriggerStay(Collider other)
     {
-        if (CheckChangeMonth()&& ConstructedFlag)
+        if (CheckChangeMonth() && ConstructedFlag)
         {
             if (other.gameObject.tag == "RumFactory")
             {
-         //       if(other.gameObject.GetComponent.)
+                
+                {
+                    gameObject.GetComponent.RumFactoryClass.Wind＿PowerGeneratorFlag = true;
+
+
+                }
             }
 
         }
