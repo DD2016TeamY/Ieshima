@@ -25,6 +25,7 @@ public class FactoryClass : BaseClass {
         {
             ConstructionTime--;
         }
+<<<<<<< HEAD
     }
 
     //維持費を支払う
@@ -34,11 +35,20 @@ public class FactoryClass : BaseClass {
     }
 
     //電力を受容する
+=======
+    }
+
+    //電力を受容する
+>>>>>>> 22a789ee534c675f93e5a370a2661e3c1b224ec0
     protected void SetPower()
     {
         if(STATIC_SPACE.StaticValue.ContractHamahimoDenryokuFlag)
         {
             GetPower = CONSTATIC_SPACE.ConstaticValue.PowerGanaration_of_Hamahimo;
+        }
+        else if(Wind_PowerGeneratorFlag)
+        {
+            GetPower = CONSTATIC_SPACE.ConstaticValue.WindPowerGenerate;
         }
         else
         {

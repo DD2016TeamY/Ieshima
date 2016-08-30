@@ -19,9 +19,15 @@ public class BaseClass : MonoBehaviour
             CheckNowMonth = STATIC_SPACE.StaticValue.Month;
             return true;
         }
+<<<<<<< HEAD
     }
 
     //建設費を支払う
+=======
+    }
+
+    //コストを支払う
+>>>>>>> 22a789ee534c675f93e5a370a2661e3c1b224ec0
     protected void PayCost(int cost)
     {
         STATIC_SPACE.StaticValue.NationalTreasury -= cost;
