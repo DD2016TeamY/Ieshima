@@ -14,6 +14,11 @@ public class FarmClass : BaseClass {
     }
 
     //利益の収集
+    protected void Gain(int profit)
+    {
+        STATIC_SPACE.StaticValue.NationalTreasury += ProduceGrowth * profit;
+    }
+
     protected void Gain(int profit , int brand_power = 1)
     {
         STATIC_SPACE.StaticValue.NationalTreasury += ProduceGrowth * profit * brand_power;
