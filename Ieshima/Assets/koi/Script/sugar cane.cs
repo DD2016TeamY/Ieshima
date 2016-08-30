@@ -2,7 +2,6 @@
 using System.Collections;
 using STATIC_SPACE;
 using CONSTATIC_SPACE;
-
 public class sugarcane : FarmClass
 {
     public GameObject BrawnSugarFactory;
@@ -19,22 +18,17 @@ public class sugarcane : FarmClass
     void Update() {
         if (STATIC_SPACE.StaticValue.Month == MonthChangeCheck)
         {
-            GrawUp();
+            GrowUp();
         }    
             if (CheckHarvestDay()) {
                
             }
-                //if(){
-                //FactoryFlag  = false;
-                //     }
+               if(FactoryFlag == true){
+                   
+                }
                 else{
-                Gain ( CONSTATIC_SPACE.ConstaticValue.Price_of_Sugarcane);
+                Gain(CONSTATIC_SPACE.ConstaticValue.Price_of_Sugarcane);
                 Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_Sugarcane);
                 }
-            }
-
-    private void GrawUp()
-    {
-        throw new System.NotImplementedException();
-    }
         }
+}
