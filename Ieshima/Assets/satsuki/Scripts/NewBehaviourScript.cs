@@ -1,10 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
-using STATIC_SPACE;
-using CONSTATIC_SPACE;
 
-public class Test : FarmClass /*工場系の時はFactoryClass*/{
+public class NewBehaviourScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

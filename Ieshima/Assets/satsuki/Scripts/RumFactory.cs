@@ -3,7 +3,7 @@ using System.Collections;
 using STATIC_SPACE;
 using CONSTATIC_SPACE;
 
-public class RumFactry : FactoryClass {
+public class RumFactory : FactoryClass {
     private int SugarcaneGrowth;    //工場に入ってくるサトウキビ
     private int FermentDays;        //ラムの熟成期間
 
@@ -48,9 +48,15 @@ public class RumFactry : FactoryClass {
         }
 	}
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider sugarcanefarm)
     {
- 
+        if (sugarcanefarm.gameObject.tag == "SugacaneFarm")
+        {
+            sugarcanefarm.gameObject.GetComponent<sugarcane>().BrawnSugarFactory = this.gameObject;
+
+            sugarcanefarm.gameObject.GetComponent<sugarcane>().FactoryFlag = true;
+        }
+
     }
 
 
