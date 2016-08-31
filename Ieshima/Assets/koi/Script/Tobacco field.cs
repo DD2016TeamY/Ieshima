@@ -19,7 +19,7 @@ public class Tobaccofield : FarmClass
             }
             if(FactoryFlag){
                 //TobaccoFactory.GetComponent<TobaccoGroeth>;
-                probuceGrowth = TobaccoGrowth;
+               // probuceGrowth = TobaccoGrowth;
                 } else{
                 Gain(CONSTATIC_SPACE.ConstaticValue.Price_of_LeafTobacco);
                 Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_LeafTobacco);                
