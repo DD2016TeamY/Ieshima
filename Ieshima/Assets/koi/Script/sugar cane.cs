@@ -28,7 +28,7 @@ public class sugarcane : FarmClass
                 //FactoryFlag  = false;
                 //     }
                 else{
-                Gain ( CONSTATIC_SPACE.ConstaticValue.Price_of_Sugarcane);
+                GainBrand ( CONSTATIC_SPACE.ConstaticValue.Price_of_Sugarcane);
                 Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_Sugarcane);
                 }
             }

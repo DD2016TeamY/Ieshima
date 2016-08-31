@@ -43,14 +43,12 @@ public class Windfarm : FactoryClass
         {
             if (other.gameObject.tag == "RumFactory")
             {
-                if(other.gameObject.GetComponent<RumFactry>().Wind_PowerGeneratorsFlg
+                if(other.gameObject.GetComponent<Windfarm>().Wind_PowerGeneratorFlag == false)//危うい
                 {
-                    gameObject.GetComponent.RumFactryClass.Wind＿PowerGeneratorFlag = true;
-
+                    other.gameObject.GetComponent<Windfarm>().Wind_PowerGeneratorFlag = true;
 
                 }
             }
-
         }
     }
 }

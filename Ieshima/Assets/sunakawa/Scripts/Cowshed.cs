@@ -20,7 +20,7 @@ public class Cowshed : FarmClass
             GrowUp();
             if (CheckHarvestDay())
             {
-                Gain(CONSTATIC_SPACE.ConstaticValue.Price_of_cow, STATIC_SPACE.StaticValue.BrandPower_of_Cow);
+                GainBrand(CONSTATIC_SPACE.ConstaticValue.Price_of_cow, STATIC_SPACE.StaticValue.BrandPower_of_Cow);
                
                 if (ProduceGrowth > STATIC_SPACE.StaticValue.BrandPower_of_Cow)
                 {
