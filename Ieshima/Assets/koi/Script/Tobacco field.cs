@@ -18,8 +18,8 @@ public class Tobaccofield : FarmClass
             GrowUp();
             }
             if(FactoryFlag){
-                //TobaccoFactory.GetComponent<TobaccoGroeth>;
-               // probuceGrowth = TobaccoGrowth;
+                //TobaccoFactory.GetComponent<>;
+                //TobaccoGrowh  =  ProbuceGrowth;
                 } else{
                 Gain(CONSTATIC_SPACE.ConstaticValue.Price_of_LeafTobacco);
                 Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_LeafTobacco);                
