@@ -3,7 +3,7 @@ using System.Collections;
 using STATIC_SPACE;
 using CONSTATIC_SPACE;
 
-public class RumFactry : FactoryClass {
+public class RumFactory : FactoryClass {
     private int SugarcaneGrowth;    //工場に入ってくるサトウキビ
     private int FermentDays;        //ラムの熟成期間
 
