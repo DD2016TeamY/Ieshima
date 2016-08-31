@@ -26,7 +26,7 @@ public class Redpotatoes : FarmClass
                 if (FactoryFlag == true)
                 {
                     //PurupuruFactory.GetComponent<RedpotatoGrowth>;
-                    RedPotatoGrowth = ProduceGrowth;
+                   // RedPotatoGrowth = ProduceGrowth;
                 }
                 else
                 {
