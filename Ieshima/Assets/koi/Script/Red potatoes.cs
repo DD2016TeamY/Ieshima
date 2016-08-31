@@ -20,16 +20,20 @@ public class Redpotatoes : FarmClass
         if (CheckChangeMonth())
         {
             GrowUp();
-        }
 
-        if (CheckHarvestDay())
-        {
-            if (FactoryFlag == true) { 
-          //  PurupuruFactory.GetComponent<>
-             RedPotatoGrowth = ProduceGrowth;
-            }else{
-            Gain(CONSTATIC_SPACE.ConstaticValue.Price_of_RedPotato);
-            Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_RedPotato);
+            if (CheckHarvestDay())
+            {
+                if (FactoryFlag == true)
+                {
+                    PurupuruFactory.GetComponent<RedpotatoGrowth>;
+                    RedPotatoGrowth = ProduceGrowth;
+                }
+                else
+                {
+                    
+                    Gain(CONSTATIC_SPACE.ConstaticValue.Price_of_RedPotato);
+                    Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_RedPotato);
+                }
             }
         }
     }

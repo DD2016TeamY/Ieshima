@@ -20,7 +20,7 @@ public class TobaccoFactory : FactoryClass {
         {
             if (CheckChangeMonth())
             {
-                STATIC_SPACE.StaticValue.NationalTreasury = (TobaccoGrowth * CONSTATIC_SPACE.ConstaticValue.Price_of_Tobacco);
+                STATIC_SPACE.StaticValue.NationalTreasury += (TobaccoGrowth * CONSTATIC_SPACE.ConstaticValue.Price_of_Tobacco);
                 TobaccoGrowth = 0;
                 PayCost(CONSTATIC_SPACE.ConstaticValue.TobaccoFactoryRunningCost);
             }
@@ -41,7 +41,7 @@ public class TobaccoFactory : FactoryClass {
 
     void OnTriggerEnter(Collider TobaccoFarm)
     {
-        if (TobaccoFarm.gameObject.tag == "SugacaneFarm")
+        if (TobaccoFarm.gameObject.tag == "TobaccoFarm")
         {
             TobaccoFarm.gameObject.GetComponent<Tobaccofield>().TobaccoFactory = this.gameObject;
 
