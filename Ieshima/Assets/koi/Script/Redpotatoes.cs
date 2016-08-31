@@ -25,7 +25,6 @@ public class Redpotatoes : FarmClass
             {
                 if (FactoryFlag == true)
                 {
-                    
                    // RedPotatoGrowth = ProduceGrowth;
                 }
                 else
