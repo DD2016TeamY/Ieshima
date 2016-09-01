@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 public class Windfarm : FactoryClass
 {
-    public GameObject FactorysList;
+    public List<GameObject> FactorysList;
 
     // Use this for initialization
     void Start()
@@ -15,7 +15,7 @@ public class Windfarm : FactoryClass
 
         ConstructionTime = CONSTATIC_SPACE.ConstaticValue.WindPowerGenerate;
 
-        FactorysList = new GameObject();
+        FactorysList = new List<GameObject>();
     }
 
     // Update is called once per frame
@@ -43,12 +43,45 @@ public class Windfarm : FactoryClass
         {
             if (other.gameObject.tag == "RumFactory")
             {
-                if(other.gameObject.GetComponent<Windfarm>().Wind_PowerGeneratorFlag == false)//危うい
+                if(other.gameObject.GetComponent<RumFactory>().Wind_PowerGeneratorFlag == false)
                 {
-                    other.gameObject.GetComponent<Windfarm>().Wind_PowerGeneratorFlag = true;
+                    gameObject.GetComponent<RumFactory>().Wind_PowerGeneratorFlag = true;
+
+                    FactorysList.Add(other.gameObject);
+                }
+                else if (other.gameObject.tag == "TobaccoFactory")
+                {
+                    if (gameObject.GetComponent<TobaccoFactory>().Wind_PowerGeneratorFlag == false)
+                    {
+                        gameObject.GetComponent<TobaccoFactory>().Wind_PowerGeneratorFlag = true;
+
+                        FactorysList.Add(other.gameObject);
+                    }
+                }
+                else if (other.gameObject.tag == "Hotel")
+                {
+                    if (other.gameObject.GetComponent<Hotel>().Wind_PowerGeneratorFlag == false)
+                    {
+                        gameObject.GetComponent<Hotel>().Wind_PowerGeneratorFlag = true;
+
+                        FactorysList.Add(other.gameObject);
+                    }
 
                 }
             }
         }
+
+     
     }
+
+    /*void DestroyThisGenerator()
+    {
+        for (int i = 0; i < FactorysList.Count; i++)
+        {
+            if (other.gameObject.tag == "RumFactory")
+            { 
+                
+            }
+        }
+    }*/
 }
