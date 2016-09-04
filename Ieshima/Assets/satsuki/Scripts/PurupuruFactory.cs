@@ -4,7 +4,7 @@ using System.Collections;
 public class PurupuruFactory : FactoryClass
 {
 
-    private int RedpotatoGrowth; //工場に入ってくる紅イモ
+    public int RedpotatoGrowth; //工場に入ってくる紅イモ
 
 	// Use this for initialization
 	void Start () {

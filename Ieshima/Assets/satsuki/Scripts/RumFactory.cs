@@ -4,8 +4,8 @@ using STATIC_SPACE;
 using CONSTATIC_SPACE;
 
 public class RumFactory : FactoryClass {
-    private int SugarcaneGrowth;    //工場に入ってくるサトウキビ
-    private int FermentDays;        //ラムの熟成期間
+    public int SugarcaneGrowth;    //工場に入ってくるサトウキビ
+    public int FermentDays;        //ラムの熟成期間
 
 	// Use this for initialization
 	void Start () {
