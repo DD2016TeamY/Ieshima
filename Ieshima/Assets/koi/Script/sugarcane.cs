@@ -20,26 +20,10 @@ public class sugarcane : FarmClass
         {
             GrowUp();
 
-        }    
-            if (CheckHarvestDay()) {
-               
-            }
-               if(FactoryFlag == true){
-                   
-                }
-                else{
-
-                GainBrand ( CONSTATIC_SPACE.ConstaticValue.Price_of_Sugarcane);
-
-                Gain(CONSTATIC_SPACE.ConstaticValue.Price_of_Sugarcane);
-
-                Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_Sugarcane);
-                }
-
-    }
-}
+        }
         if (CheckHarvestDay())
         {
+
         }
         if (FactoryFlag == true)
         {
@@ -51,6 +35,6 @@ public class sugarcane : FarmClass
 
             Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_Sugarcane);
         }
-    }
 
+    }
 }
