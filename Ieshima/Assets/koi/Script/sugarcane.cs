@@ -27,11 +27,11 @@ public class sugarcane : FarmClass
                    
                 }
                 else{
-<<<<<<< HEAD
+
                 GainBrand ( CONSTATIC_SPACE.ConstaticValue.Price_of_Sugarcane);
-=======
+
                 Gain(CONSTATIC_SPACE.ConstaticValue.Price_of_Sugarcane);
->>>>>>> 917114ad9ec6dde39c4c62f158de6e17a7b06339
+
                 Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_Sugarcane);
                 }
         }
