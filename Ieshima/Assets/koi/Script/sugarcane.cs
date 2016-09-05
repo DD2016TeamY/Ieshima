@@ -9,16 +9,17 @@ public class sugarcane : FarmClass
     // Use this for initialization
     void Start()
     {
-
         HarvestDays = CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_Sugarcane;
         MonthChangeCheck = STATIC_SPACE.StaticValue.Month;
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
         if (STATIC_SPACE.StaticValue.Month == MonthChangeCheck)
         {
             GrowUp();
+
         }    
             if (CheckHarvestDay()) {
                
@@ -34,5 +35,22 @@ public class sugarcane : FarmClass
 
                 Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_Sugarcane);
                 }
+
+    }
+}
+        if (CheckHarvestDay())
+        {
         }
+        if (FactoryFlag == true)
+        {
+
+        }
+        else
+        {
+            Gain(CONSTATIC_SPACE.ConstaticValue.Price_of_Sugarcane);
+
+            Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_Sugarcane);
+        }
+    }
+
 }
