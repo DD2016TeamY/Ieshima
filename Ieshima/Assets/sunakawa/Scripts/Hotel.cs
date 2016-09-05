@@ -9,11 +9,11 @@ public class Hotel : FactoryClass
     // Use this for initialization
     void Start()
     {
-      PayCost(CONSTATIC_SPACE.ConstaticValue.HotelCost);
+        PayCost(CONSTATIC_SPACE.ConstaticValue.HotelCost);
 
-      ConstructionTime = CONSTATIC_SPACE.ConstaticValue.ConstructionTime_of_Hotel;
+        ConstructionTime = CONSTATIC_SPACE.ConstaticValue.ConstructionTime_of_Hotel;
 
-      STATIC_SPACE.StaticValue.TourismNumber_of_Facilities += 1;
+        STATIC_SPACE.StaticValue.TourismNumber_of_Facilities += 1;
     }
 
     // Update is called once per frame
@@ -32,7 +32,8 @@ public class Hotel : FactoryClass
         {
             ConstructionTime -= 1;
 
-            if(ConstructionTime　<=　0){
+            if (ConstructionTime <= 0)
+            {
 
                 ConstructedFlag = true;
 
