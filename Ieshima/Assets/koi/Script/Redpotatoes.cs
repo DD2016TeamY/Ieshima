@@ -29,7 +29,6 @@ public class Redpotatoes : FarmClass
                 }
                 else
                 {
-                    
                     Gain(CONSTATIC_SPACE.ConstaticValue.Price_of_RedPotato);
                     Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_RedPotato);
                 }
