@@ -19,7 +19,6 @@ public class sugarcane : FarmClass
         if (STATIC_SPACE.StaticValue.Month == MonthChangeCheck)
         {
             GrowUp();
-<<<<<<< HEAD
         }
         if (CheckHarvestDay())
         {
@@ -35,18 +34,4 @@ public class sugarcane : FarmClass
             Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_Sugarcane);
         }
     }
-=======
-        }    
-            if (CheckHarvestDay()) {
-               
-            }
-               if(FactoryFlag == true){
-                   
-                }
-                else{
-                Gain(CONSTATIC_SPACE.ConstaticValue.Price_of_Sugarcane);
-                Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_Sugarcane);
-                }
-        }
->>>>>>> 2f2d02843e1090ec426935456bb16892993633ab
 }
