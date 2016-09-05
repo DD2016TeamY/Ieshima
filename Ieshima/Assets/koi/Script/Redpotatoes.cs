@@ -25,11 +25,11 @@ public class Redpotatoes : FarmClass
             {
                 if (FactoryFlag == true)
                 {
-                   // RedPotatoGrowth = ProduceGrowth;
+                    PurupuruFactory.GetComponent<PurupuruFactory>().RedpotatoGrowth = ProduceGrowth;
+                
                 }
                 else
                 {
-                    
                     Gain(CONSTATIC_SPACE.ConstaticValue.Price_of_RedPotato);
                     Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_RedPotato);
                 }

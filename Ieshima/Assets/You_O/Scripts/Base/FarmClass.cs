@@ -19,7 +19,7 @@ public class FarmClass : BaseClass {
         STATIC_SPACE.StaticValue.NationalTreasury += ProduceGrowth * profit;
     }
 
-    protected void GainBrand(int profit , int brand_power = 1)
+    protected void GainBrand(int profit, int brand_power = 1)
     {
         STATIC_SPACE.StaticValue.NationalTreasury += ProduceGrowth * profit * brand_power;
     }

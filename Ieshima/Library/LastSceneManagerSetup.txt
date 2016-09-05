@@ -1,4 +1,1 @@
-sceneSetups:
-- path: Assets/satsuki/Scene/ore.unity
-  isLoaded: 1
-  isActive: 1
+sceneSetups: []
