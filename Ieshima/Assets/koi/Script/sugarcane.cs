@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-﻿using UnityEngine;
-=======
 using UnityEngine;
->>>>>>> fa06f6fc5a49be7510b82aeed9b795965963b550
 using System.Collections;
 using STATIC_SPACE;
 using CONSTATIC_SPACE;
