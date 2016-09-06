@@ -19,6 +19,9 @@ namespace STATIC_SPACE
         public static int BrandPower_of_Rum = 1;   //ラム酒のブランド力
         public static int Tourists = 0;    //観光客数
         public static int EventsScale = 0;  //イベント規模
+        public static bool ConstructionFlag = false;    //建築フラグ
+        public static bool DestroyFlag = false; //破壊フラグ
+        public static GameObject ConstructFacility; //建築する建物
 
         void Start()
         {
