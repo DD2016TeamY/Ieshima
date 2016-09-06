@@ -19,7 +19,7 @@ public class DestroyFacilites : MonoBehaviour {
 
     void OnMouseDown()
     {
-        STATIC_SPACE.StaticValue.
+        STATIC_SPACE.StaticValue.DestroyFlag = true;
     }
 
 }
