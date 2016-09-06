@@ -5,7 +5,7 @@ using CONSTATIC_SPACE;
 
 public class BrownSugarFactory : FactoryClass {
 
-    private int SugarcaneGrowth; //工場に入ってくるサトウキビ 
+    public int SugarcaneGrowth; //工場に入ってくるサトウキビ 
 
 	// Use this for initialization
 	void Start () {
