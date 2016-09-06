@@ -4,7 +4,7 @@ using STATIC_SPACE;
 using CONSTATIC_SPACE;
 
 public class GotoPrev : FactoryClass{
-    public GameObject PrevOage;
+    public GameObject PrevPage;
 
 	// Use this for initialization
 	void Start () {
@@ -15,8 +15,8 @@ public class GotoPrev : FactoryClass{
 	void Update () {
 	
 	}
-   void GotoNextPage(){
-    PrevOage.SetActive(true);
+    void GoToPrevPage(){
+    PrevPage.SetActive(true);
         this.gameObject.SetActive(false);
     }
 }
