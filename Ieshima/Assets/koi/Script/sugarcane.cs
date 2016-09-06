@@ -25,17 +25,20 @@ public class sugarcane : FarmClass
         }
         if (FactoryFlag == true)
         {
-            if(BrawnSugarFactory.tag == ("BrownSugarFactory")){
+            if (BrawnSugarFactory.tag == ("BrownSugarFactory"))
+            {
                 BrawnSugarFactory.GetComponent<BrownSugarFactory>().SugarcaneGrowth = ProduceGrowth;
+            }
         }
-     }
-        else if (BrawnSugarFactory.tag == ("RumFactory")){
-        BrawnSugarFactory.GetComponent<RumFactory>().SugarcaneGrowth = ProduceGrowth;
-        }        
-        else 
+        else if (BrawnSugarFactory.tag == ("RumFactory"))
+        {
+            BrawnSugarFactory.GetComponent<RumFactory>().SugarcaneGrowth = ProduceGrowth;
+        }
+        else
         {
             Gain(CONSTATIC_SPACE.ConstaticValue.Price_of_Sugarcane);
 
             Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_Sugarcane);
         }
     }
+}
