@@ -16,9 +16,9 @@ public class NewBehaviourScript : BaseClass {
             if (STATIC_SPACE.StaticValue.NationalTreasuryPerMonth[STATIC_SPACE.StaticValue.NationalTreasuryPerMonth.Count - 1] > 
                     STATIC_SPACE.StaticValue.NationalTreasuryPerMonth[STATIC_SPACE.StaticValue.NationalTreasuryPerMonth.Count - 2])
             {
-                   STATIC_SPACE.StaticValue.Population += ((STATIC_SPACE.StaticValue.NationalTreasuryPerMonth[STATIC_SPACE.StaticValue.NationalTreasuryPerMonth.Count - 1] -
-                       STATIC_SPACE.StaticValue.NationalTreasuryPerMonth[STATIC_SPACE.StaticValue.NationalTreasuryPerMonth.Count - 2]) * 
-                            CONSTATIC_SPACE.ConstaticValue.)
+                STATIC_SPACE.StaticValue.Population += (int)((STATIC_SPACE.StaticValue.NationalTreasuryPerMonth[STATIC_SPACE.StaticValue.NationalTreasuryPerMonth.Count - 1] -
+                    STATIC_SPACE.StaticValue.NationalTreasuryPerMonth[STATIC_SPACE.StaticValue.NationalTreasuryPerMonth.Count - 2]) *
+                         CONSTATIC_SPACE.ConstaticValue.NationScale);
             }
         }
 	
