@@ -11,6 +11,7 @@ namespace CONSTATIC_SPACE
         public const float Scale_of_SeaGodFestival = 3.0f; //海神祭の規模
         public const float Scale_of_LilyFestival = 4.0f;   //ゆりまつりの規模
         public const float Scale_of_MinimumTyphoonDamage = 1.0f;   //台風の最小被害
+        public const float NationScale = 0.5f;  //人口増加率
 
         public const int SugarcaneFarmCost = 100;  //サトウキビ畑のコスト
         public const int HarvestDays_of_Sugarcane = 18;    //サトウキビの収穫期間
