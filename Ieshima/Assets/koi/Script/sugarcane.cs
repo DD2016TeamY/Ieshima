@@ -1,4 +1,5 @@
-using UnityEngine;
+
+ÅEøusing UnityEngine;
 using System.Collections;
 using STATIC_SPACE;
 using CONSTATIC_SPACE;
@@ -19,6 +20,15 @@ public class sugarcane : FarmClass
         if (STATIC_SPACE.StaticValue.Month == MonthChangeCheck)
         {
             GrowUp();
+
+        }
+        if (CheckHarvestDay())
+        {
+
+        }
+        if (FactoryFlag == true)
+        {
+
         }
         if (CheckHarvestDay())
         {

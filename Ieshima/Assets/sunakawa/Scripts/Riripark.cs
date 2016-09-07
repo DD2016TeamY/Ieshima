@@ -43,7 +43,7 @@ public class Riripark : FactoryClass
             STATIC_SPACE.StaticValue.NationalTreasury = STATIC_SPACE.StaticValue.TourismNumber_of_Facilities * STATIC_SPACE.StaticValue.Tourists;
         }
         else {
-            STATIC_SPACE.StaticValue.NationalTreasury = STATIC_SPACE.StaticValue.TourismNumber_of_Facilities * STATIC_SPACE.StaticValue.Tourists * (STATIC_SPACE.StaticValue.EventsScale + 1);
+            STATIC_SPACE.StaticValue.NationalTreasury = (int)(STATIC_SPACE.StaticValue.TourismNumber_of_Facilities * STATIC_SPACE.StaticValue.Tourists * (STATIC_SPACE.StaticValue.EventsScale + 1));
         }
     }
 }
