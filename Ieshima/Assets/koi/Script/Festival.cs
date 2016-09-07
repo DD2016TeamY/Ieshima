@@ -19,10 +19,10 @@ public class Festival : BaseClass {
             if (STATIC_SPACE.StaticValue.Month == 4) {
                 STATIC_SPACE.StaticValue.EventsScale = CONSTATIC_SPACE.ConstaticValue.Scale_of_MarathonTournament;
             }else if ( STATIC_SPACE.StaticValue.Month == 5){
-            STATIC_SPACE.StaticValue.EventsScale =　CONSTATIC_SPACE.ConstaticValue.Scale_of_LilyFestival;
+            STATIC_SPACE.StaticValue.EventsScale  =   CONSTATIC_SPACE.ConstaticValue.Scale_of_LilyFestival;
             }
             else if(STATIC_SPACE.StaticValue.Month == 6){
-                STATIC_SPACE.StaticValue.EventsScale =　CONSTATIC_SPACE.ConstaticValue.Scale_of_SeaGodFestival;
+                STATIC_SPACE.StaticValue.EventsScale =  CONSTATIC_SPACE.ConstaticValue.Scale_of_SeaGodFestival;
             }
         }       
      }
