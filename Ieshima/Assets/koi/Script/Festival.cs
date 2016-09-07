@@ -17,12 +17,12 @@ public class Festival : BaseClass {
         if (CheckChangeMonth()) {
             STATIC_SPACE.StaticValue.EventsScale = 1;
             if (STATIC_SPACE.StaticValue.Month == 4) {
-                STATIC_SPACE.StaticValue.EventsScale = 2;
+                STATIC_SPACE.StaticValue.EventsScale = CONSTATIC_SPACE.ConstaticValue.Scale_of_MarathonTournament;
             }else if ( STATIC_SPACE.StaticValue.Month == 5){
-            STATIC_SPACE.StaticValue.EventsScale = 3;
+            STATIC_SPACE.StaticValue.EventsScale =　CONSTATIC_SPACE.ConstaticValue.Scale_of_LilyFestival;
             }
             else if(STATIC_SPACE.StaticValue.Month == 6){
-                STATIC_SPACE.StaticValue.EventsScale =4;
+                STATIC_SPACE.StaticValue.EventsScale =　CONSTATIC_SPACE.ConstaticValue.Scale_of_SeaGodFestival;
             }
         }       
      }
