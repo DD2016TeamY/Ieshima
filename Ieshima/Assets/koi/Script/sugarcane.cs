@@ -1,5 +1,4 @@
-
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using STATIC_SPACE;
 using CONSTATIC_SPACE;
@@ -17,26 +16,12 @@ public class sugarcane : FarmClass
     // Update is called once per frame
     void Update()
     {
-        if (STATIC_SPACE.StaticValue.Month == MonthChangeCheck)
+        if (CheckChangeMonth())
         {
             GrowUp();
-
-        }
-        if (CheckHarvestDay())
-        {
-
-        }
-        if (FactoryFlag == true)
-        {
-
-        }
-        if (CheckHarvestDay())
-        {
-        }
-        if (FactoryFlag == true)
-        {
-            if (BrawnSugarFactory.tag == ("BrownSugarFactory"))
+            if (CheckHarvestDay())
             {
+<<<<<<< HEAD
 
                 BrawnSugarFactory.GetComponent<BrownSugarFactory>().SugarcaneGrowth = ProduceGrowth;
             }
@@ -50,8 +35,27 @@ public class sugarcane : FarmClass
         else
         {
             Gain(CONSTATIC_SPACE.ConstaticValue.Price_of_Sugarcane);
+=======
+                if (FactoryFlag == true)
+                {
+                    if (BrawnSugarFactory.tag == ("BrownSugarFactory"))
+                    {
+                        BrawnSugarFactory.GetComponent<BrownSugarFactory>().SugarcaneGrowth = ProduceGrowth;
+                    }
 
-            Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_Sugarcane);
+                    else if (BrawnSugarFactory.tag == ("RumFactory"))
+                    {
+                        BrawnSugarFactory.GetComponent<RumFactory>().SugarcaneGrowth = ProduceGrowth;
+                    }
+                }
+                else
+                {
+                    Gain(CONSTATIC_SPACE.ConstaticValue.Price_of_Sugarcane);
+>>>>>>> c3d04f22130861b2cd004d1c2d2219cac50b17e2
+
+                    Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_Sugarcane);
+                }
+            }
         }
     }
 }

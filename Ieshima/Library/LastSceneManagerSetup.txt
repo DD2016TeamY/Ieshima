@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/sunakawa/scene/abcd.unity
+=======
+- path: Assets/You_O/Scene/you.unity
+>>>>>>> c3d04f22130861b2cd004d1c2d2219cac50b17e2
   isLoaded: 1
   isActive: 1
