@@ -39,10 +39,11 @@ public class Windfarm : FactoryClass
 
     void OnTriggerStay(Collider other)
     {
-        if (CheckChangeMonth() && ConstructedFlag)
-        {
+       if (CheckChangeMonth() && ConstructedFlag)
+       {
             if (other.gameObject.tag == "RumFactory")
             {
+                Debug.Log("g");
                 if(other.gameObject.GetComponent<RumFactory>().Wind_PowerGeneratorFlag == false)
                 {
                     gameObject.GetComponent<RumFactory>().Wind_PowerGeneratorFlag = true;
@@ -69,7 +70,7 @@ public class Windfarm : FactoryClass
 
                 }
             }
-        }
+       }
 
      
     }
