@@ -3,8 +3,7 @@ using System.Collections;
 using STATIC_SPACE;
 using CONSTATIC_SPACE;
 
-
-public class MemoryNowTag : FactoryClass
-{
-    public GameObject MemoryTag;
+    public class MemoryTag : FactoryClass
+    {
+        public GameObject MemoryNowTag;
 }
