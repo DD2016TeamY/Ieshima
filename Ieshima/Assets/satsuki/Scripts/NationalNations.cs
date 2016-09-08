@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NewBehaviourScript : BaseClass{
+public class NationalNations : BaseClass
+{
 
 
 	// Use this for initialization
