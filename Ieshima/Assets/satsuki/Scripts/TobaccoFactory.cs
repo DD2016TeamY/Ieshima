@@ -43,6 +43,9 @@ public class TobaccoFactory : FactoryClass {
     {
         if (TobaccoFarm.gameObject.tag == "TobaccoFarm")
         {
+
+            Debug.Log("B");
+
             TobaccoFarm.gameObject.GetComponent<Tobaccofield>().TobaccoFactory = this.gameObject;
 
             TobaccoFarm.gameObject.GetComponent<Tobaccofield>().FactoryFlag = true;

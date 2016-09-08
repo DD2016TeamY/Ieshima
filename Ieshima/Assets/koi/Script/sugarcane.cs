@@ -37,11 +37,13 @@ public class sugarcane : FarmClass
         {
             if (BrawnSugarFactory.tag == ("BrownSugarFactory"))
             {
+
                 BrawnSugarFactory.GetComponent<BrownSugarFactory>().SugarcaneGrowth = ProduceGrowth;
             }
 
             else if (BrawnSugarFactory.tag == ("RumFactory"))
             {
+
                 BrawnSugarFactory.GetComponent<RumFactory>().SugarcaneGrowth = ProduceGrowth;
             }
         }

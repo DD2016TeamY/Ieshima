@@ -52,6 +52,9 @@ public class RumFactory : FactoryClass {
     {
         if (sugarcanefarm.gameObject.tag == "SugacaneFarm")
         {
+
+            Debug.Log("B");
+            
             sugarcanefarm.gameObject.GetComponent<sugarcane>().BrawnSugarFactory = this.gameObject;
 
             sugarcanefarm.gameObject.GetComponent<sugarcane>().FactoryFlag = true;
