@@ -3,22 +3,22 @@ using System.Collections;
 using STATIC_SPACE;
 using CONSTATIC_SPACE;
 
-public class ConstructBumttom : MonoBehaviour {
+public class ConstructButton : MonoBehaviour {
 
     public GameObject NameImage;
     public GameObject Facility;
 
-    void OnMouseEnter()
+    public void OnMouseDraw()
     {
         NameImage.SetActive(true);
     }
 
-    void OnMouseExit()
+    public void OnMouseDontDraw()
     {
         NameImage.SetActive(false);
     }
 
-    void OnMouseDown()
+    public void ClickOn()
     {
         STATIC_SPACE.StaticValue.ConstructionFlag = true;
         STATIC_SPACE.StaticValue.ConstructFacility = Facility;

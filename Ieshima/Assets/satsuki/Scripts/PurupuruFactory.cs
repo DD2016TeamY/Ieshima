@@ -42,6 +42,8 @@ public class PurupuruFactory : FactoryClass
     {
         if (RedPotatoFarm.gameObject.tag == "RedPotatoFarm")
         {
+            Debug.Log("B");
+
             RedPotatoFarm.gameObject.GetComponent<Redpotatoes>().PurupuruFactory = this.gameObject;
 
             RedPotatoFarm.gameObject.GetComponent<Redpotatoes>().FactoryFlag = true;
