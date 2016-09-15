@@ -23,6 +23,7 @@ public class sugarcane : FarmClass
             {
 
 
+
                 BrawnSugarFactory.GetComponent<BrownSugarFactory>().SugarcaneGrowth = ProduceGrowth;
             }
 
@@ -35,6 +36,7 @@ public class sugarcane : FarmClass
         else
         {
             Gain(CONSTATIC_SPACE.ConstaticValue.Price_of_Sugarcane);
+
 
                 if (FactoryFlag == true)
                 {
