@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
+- path: Assets/satsuki/Scene/ore.unity
+=======
 - path: Assets/You_O/Scene/you.unity
+>>>>>>> 10b446c62aa18e53933868ac3ff25c9e5a814cf7
   isLoaded: 1
   isActive: 1
