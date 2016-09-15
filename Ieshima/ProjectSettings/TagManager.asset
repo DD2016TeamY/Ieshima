@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - BrownSugarFactory
+  - RumFactory
+  - SugacaneFarm
+  - RedPotatoFarm
+  - TobaccoFarm
+  - RumFactory
   layers:
   - Default
   - TransparentFX
