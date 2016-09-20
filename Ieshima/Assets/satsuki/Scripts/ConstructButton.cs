@@ -7,6 +7,7 @@ public class ConstructButton : MonoBehaviour {
 
     public GameObject NameImage;
     public GameObject Facility;
+    private GameObject NowCreate;
 
     public void OnMouseDraw()
     {
@@ -21,6 +22,9 @@ public class ConstructButton : MonoBehaviour {
     public void ClickOn()
     {
         STATIC_SPACE.StaticValue.ConstructionFlag = true;
-        STATIC_SPACE.StaticValue.ConstructFacility = Facility;
+        NowCreate = Instantiate(Facility);
+        STATIC_SPACE.StaticValue.ConstructFacility = NowCreate;
+        Debug.Log(100);
+
     }
 }
