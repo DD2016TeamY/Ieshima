@@ -14,7 +14,7 @@ public class ObjectCopy : MonoBehaviour
             NowCreate = (GameObject)Instantiate(this.gameObject, this.transform.position, this.transform.rotation);
             NowCreate.GetComponent<ObjectCopy>().enabled = false;
             STATIC_SPACE.StaticValue.ConstructionFlag = false;
-            gameObject.SetActive(false);
+            Destroy(this.gameObject);
         }
     }
 }

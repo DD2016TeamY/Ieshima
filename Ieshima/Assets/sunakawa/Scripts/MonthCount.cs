@@ -2,23 +2,35 @@
 using System.Collections;
 using STATIC_SPACE;
 using CONSTATIC_SPACE;
-public class MonthCount : MonoBehaviour {
+public class MonthCount : MonoBehaviour
+{
 
     int TimeCounter;
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        
+    bool flag;
+
+    // Use this for initialization
+    void Start()
+    {
+        flag = false;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
         TimeCounter = (int)Time.time;
 
-        if (TimeCounter == 60)
+        if (TimeCounter % 2 == 0)
         {
-            ++STATIC_SPACE.StaticValue.Month;
+            if (flag)
+            {
+                flag = false;
+                ++STATIC_SPACE.StaticValue.Month;
+            }
         }
-	
-	}
+        else if (!flag)
+        {
+            flag = true;
+        }
+    }
 }
