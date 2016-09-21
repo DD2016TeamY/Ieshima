@@ -5,7 +5,6 @@ using STATIC_SPACE;
 public class mousedeidousaseru : MonoBehaviour
 {
     public Camera MainCamera;
-    public Transform target;
     Vector3 hitPoint;
 
     bool flag;
@@ -19,7 +18,7 @@ public class mousedeidousaseru : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (STATIC_SPACE.StaticValue.ConstructionFlag)
+        if (STATIC_SPACE.StaticValue.ConstructionFlag && STATIC_SPACE.StaticValue.ConstructFacility != null)
         {
             //マウスカーソルからRay放射
             // maincameraにtagを設定する
@@ -59,7 +58,7 @@ public class mousedeidousaseru : MonoBehaviour
                 return;
             }
 
-            target.transform.position = hitPoint;
+            STATIC_SPACE.StaticValue.ConstructFacility.transform.position = hitPoint;
         }
     }
 }
