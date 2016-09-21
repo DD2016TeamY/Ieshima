@@ -1,20 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/koi/scene/king.unity
-=======
-<<<<<<< HEAD
 - path: Assets/You_O/Scene/you.unity
-=======
-<<<<<<< HEAD
-- path: Assets/satsuki/Scene/ore.unity
-=======
-<<<<<<< HEAD
-- path: Assets/You_O/Scene/you.unity
-=======
-- path: Assets/sunakawa/scene/abcd.unity
->>>>>>> 0c6437336c0e05b351ffde89cc99da88c0711aac
->>>>>>> faf0d430a86ad6c1cc2673b682a9ea476ed5e8e7
->>>>>>> 2799be85ad1eab89a47a8131d55addce818317ee
->>>>>>> acbbcb75cd4205fbb0bce2dbf85633eeba465237
   isLoaded: 1
   isActive: 1
