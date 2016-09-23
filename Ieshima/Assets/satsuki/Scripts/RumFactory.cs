@@ -24,12 +24,13 @@ public class RumFactory : FactoryClass {
                 if (CheckFermentDay())
                 {
                     STATIC_SPACE.StaticValue.NationalTreasury += (SugarcaneGrowth * CONSTATIC_SPACE.ConstaticValue.Price_of_Rum * STATIC_SPACE.StaticValue.BrandPower_of_Rum);
-                    STATIC_SPACE.StaticValue.BrandPower_of_Rum = SugarcaneGrowth;
+                    STATIC_SPACE.StaticValue.BrandPower_of_Rum += 1;
                     Reset(CONSTATIC_SPACE.ConstaticValue.BuildingPiliod_of_Rum);
                     PayCost(CONSTATIC_SPACE.ConstaticValue.RumFactoryRunningCost);
                 }
                 else
                 {
+                    PayCost(CONSTATIC_SPACE.ConstaticValue.RumFactoryRunningCost);
                     Ferment();
                 }
             }
@@ -48,32 +49,20 @@ public class RumFactory : FactoryClass {
         }
 	}
 
-    void OnTriggerEnter(Collider sugarcanefarm)
-    {
-        if (sugarcanefarm.gameObject.tag == "SugacaneFarm")
-        {
-
-            Debug.Log("B");
-            
-            sugarcanefarm.gameObject.GetComponent<sugarcane>().BrawnSugarFactory = this.gameObject;
-
-            sugarcanefarm.gameObject.GetComponent<sugarcane>().FactoryFlag = true;
-        }
-
-    }
-
-
-
     bool CheckFermentDay()
     {
-        if (--FermentDays < 0)
+        if (SugarcaneGrowth > 0)
         {
-            return true;
+            if (--FermentDays < 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
-        else
-        {
-            return false;
-        }
+        return false;
     }
 
     void Reset(int fermentdays)
@@ -84,8 +73,10 @@ public class RumFactory : FactoryClass {
 
     void Ferment()
     {
-        FermentDays += Random.Range(1, CONSTATIC_SPACE.ConstaticValue.MaximumGrowth);
+        if (SugarcaneGrowth > 0)
+        {
+            SugarcaneGrowth += Random.Range(1, CONSTATIC_SPACE.ConstaticValue.MaximumGrowth);
+        }
     }
-
 
 }

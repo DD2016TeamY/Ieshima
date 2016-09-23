@@ -20,7 +20,7 @@ public class BrownSugarFactory : FactoryClass {
         {
             if (CheckChangeMonth())
             {
-                STATIC_SPACE.StaticValue.NationalTreasury += SugarcaneGrowth;
+                STATIC_SPACE.StaticValue.NationalTreasury += SugarcaneGrowth * CONSTATIC_SPACE.ConstaticValue.Price_of_BrownSugar;
                 SugarcaneGrowth = 0;
                 STATIC_SPACE.StaticValue.NationalTreasury -= CONSTATIC_SPACE.ConstaticValue.BrownSugarFactoryRunningCost;
             }

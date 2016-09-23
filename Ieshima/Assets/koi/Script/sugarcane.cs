@@ -16,7 +16,11 @@ public class sugarcane : FarmClass
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(HarvestDays);
+        if(BrawnSugarFactory == null)
+        {
+            FactoryFlag = false;
+        }
+
         if (CheckChangeMonth())
         {
             GrowUp();
@@ -24,14 +28,16 @@ public class sugarcane : FarmClass
             {
                 if (FactoryFlag == true && BrawnSugarFactory != null)
                 {
-                    if (BrawnSugarFactory.tag == ("BrownSugarFactory"))
+                    if (BrawnSugarFactory.tag == ("BrownSugarFactroy"))
                     {
                         BrawnSugarFactory.GetComponent<BrownSugarFactory>().SugarcaneGrowth = ProduceGrowth;
+                        Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_Sugarcane);
                     }
 
                     else if (BrawnSugarFactory.tag == ("RumFactory"))
                     {
                         BrawnSugarFactory.GetComponent<RumFactory>().SugarcaneGrowth = ProduceGrowth;
+                        Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_Sugarcane);
                     }
 
                 }

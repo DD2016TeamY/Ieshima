@@ -11,6 +11,8 @@ GameObject:
   - 33: {fileID: 3304766}
   - 65: {fileID: 6594908}
   - 23: {fileID: 2373540}
+  - 114: {fileID: 11469976}
+  - 114: {fileID: 11474356}
   m_Layer: 2
   m_Name: Cube
   m_TagString: Untagged
@@ -26,7 +28,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 462932}
-  - 114: {fileID: 11488842}
   - 54: {fileID: 5462154}
   - 65: {fileID: 6546614}
   m_Layer: 0
@@ -135,12 +136,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &11488842
+--- !u!114 &11469976
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 167276}
+  m_GameObject: {fileID: 135214}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e0cee23197133d142a26e17a747d39cf, type: 3}
@@ -148,6 +149,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FactoryFlag: 0
   TobaccoFactory: {fileID: 0}
+--- !u!114 &11474356
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c59c4164d766d4e894b9810f88c58c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LinkFlag: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -10,7 +10,6 @@ public class Tobaccofield : FarmClass
     void Start()
     {
         HarvestDays = CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_LeafTobacco;
-
     }
 
     // Update is called once per frame
@@ -24,10 +23,11 @@ public class Tobaccofield : FarmClass
                 if (FactoryFlag)
                 {
                     TobaccoFactory.GetComponent<TobaccoFactory>().TobaccoGrowth = ProduceGrowth;
+                    Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_LeafTobacco);
                 }
                 else
                 {
-                    Gain(CONSTATIC_SPACE.ConstaticValue.Price_of_LeafTobacco);
+                   // Gain(CONSTATIC_SPACE.ConstaticValue.Price_of_LeafTobacco);
                     Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_LeafTobacco);
                 }
             }

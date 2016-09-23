@@ -8,7 +8,9 @@ TagManager:
   - SugarcaneFarm
   - TobaccoFarm
   - RedpotatoFarm
-  - BrawnSugarFactroy
+  - BrownSugarFactroy
+  - RumFactory
+  - TobaccoFactory
   layers:
   - Default
   - TransparentFX
