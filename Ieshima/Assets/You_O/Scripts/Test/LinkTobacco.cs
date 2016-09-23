@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LinkSugarandRum : MonoBehaviour {
+public class LinkTobacco : MonoBehaviour {
     public bool LinkFlag;
 
     // Use this for initialization
@@ -12,11 +12,11 @@ public class LinkSugarandRum : MonoBehaviour {
 
     void OnTriggerStay(Collider factory)
     {
-        if (LinkFlag == false && factory.gameObject.tag == "RumFactory")
+        if (LinkFlag == false && factory.gameObject.tag == "TobaccoFactory")
         {
             LinkFlag = true;
-            this.GetComponent<sugarcane>().BrawnSugarFactory = factory.gameObject;
-            this.GetComponent<sugarcane>().FactoryFlag = true;
+            this.GetComponent<Tobaccofield>().TobaccoFactory = factory.gameObject;
+            this.GetComponent<Tobaccofield>().FactoryFlag = true;
         }
     }
 }
