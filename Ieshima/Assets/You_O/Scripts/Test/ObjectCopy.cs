@@ -5,16 +5,15 @@ using STATIC_SPACE;
 public class ObjectCopy : MonoBehaviour
 {
     GameObject NowCreate;
-
+    public GameObject ToCreate;
     // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0) && STATIC_SPACE.StaticValue.ConstructionFlag)
         {
-            NowCreate = (GameObject)Instantiate(this.gameObject, this.transform.position, this.transform.rotation);
-            NowCreate.GetComponent<ObjectCopy>().enabled = false;
+            NowCreate = (GameObject)Instantiate(ToCreate, this.transform.position, this.transform.rotation);
             STATIC_SPACE.StaticValue.ConstructionFlag = false;
-            gameObject.SetActive(false);
+            Destroy(this.gameObject);
         }
     }
 }

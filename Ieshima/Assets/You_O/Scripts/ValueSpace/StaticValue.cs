@@ -31,8 +31,6 @@ namespace STATIC_SPACE
 
         void Update()
         {
-            Debug.Log(ConstructionFlag);
-            Debug.Log(ConstructFacility);
         }
     }
 }
