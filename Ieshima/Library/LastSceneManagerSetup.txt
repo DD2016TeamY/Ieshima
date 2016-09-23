@@ -1,12 +1,1 @@
-sceneSetups:
-<<<<<<< HEAD
-- path: Assets/satsuki/Scene/ore.unity
-=======
-<<<<<<< HEAD
-- path: Assets/You_O/Scene/you.unity
-=======
-- path: Assets/sunakawa/scene/abcd.unity
->>>>>>> 0c6437336c0e05b351ffde89cc99da88c0711aac
->>>>>>> faf0d430a86ad6c1cc2673b682a9ea476ed5e8e7
-  isLoaded: 1
-  isActive: 1
+sceneSetups: []
