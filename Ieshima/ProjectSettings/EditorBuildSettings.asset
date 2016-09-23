@@ -4,14 +4,4 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-<<<<<<< HEAD
-    path: Assets/You_O/Scene/you.unity
-=======
-    path: Assets/title.unity
-  - enabled: 1
-    path: Assets/Main/mainscene.unity
-  - enabled: 1
-    path: Assets/result.unity
->>>>>>> ad0aa376ab66c7d63864cab8203b7a481b6aae55
+  m_Scenes: []
