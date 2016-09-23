@@ -37,16 +37,5 @@ public class BrownSugarFactory : FactoryClass {
             }
         }
 	}
-    void OnTriggerEnter(Collider sugarcanefarm)
-    {
-        if (sugarcanefarm.gameObject.tag == "SugacaneFarm")
-        {
 
-            Debug.Log("Hello, world!");
-
-            sugarcanefarm.gameObject.GetComponent<sugarcane>().BrawnSugarFactory = this.gameObject;
-
-            sugarcanefarm.gameObject.GetComponent<sugarcane>().FactoryFlag = true;
-        }
-    }
 }

@@ -19,15 +19,18 @@ public class Tobaccofield : FarmClass
         if (CheckChangeMonth())
         {
             GrowUp();
-        }
-        if (FactoryFlag)
-        {
-            TobaccoFactory.GetComponent<TobaccoFactory>().TobaccoGrowth = ProduceGrowth;
-        }
-        else
-        {
-            Gain(CONSTATIC_SPACE.ConstaticValue.Price_of_LeafTobacco);
-            Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_LeafTobacco);
+            if (CheckHarvestDay())
+            {
+                if (FactoryFlag)
+                {
+                    TobaccoFactory.GetComponent<TobaccoFactory>().TobaccoGrowth = ProduceGrowth;
+                }
+                else
+                {
+                    Gain(CONSTATIC_SPACE.ConstaticValue.Price_of_LeafTobacco);
+                    Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_LeafTobacco);
+                }
+            }
         }
     }
 }
