@@ -11,6 +11,7 @@ TagManager:
   - BrownSugarFactroy
   - RumFactory
   - TobaccoFactory
+  - PurupuruFactory
   layers:
   - Default
   - TransparentFX

@@ -32,6 +32,7 @@ public class PurupuruFactory : FactoryClass
         {
             if (CheckChangeMonth())
             {
+                DecreaseConstructionTime();
                 if (ConstructionTime <= 0)
                 {
                     ConstructedFlag = true;
