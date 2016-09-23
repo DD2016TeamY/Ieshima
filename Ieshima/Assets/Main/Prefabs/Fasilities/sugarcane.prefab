@@ -8,7 +8,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 433846}
-  - 114: {fileID: 11402774}
   - 54: {fileID: 5429368}
   - 65: {fileID: 6532826}
   m_Layer: 0
@@ -31,6 +30,8 @@ GameObject:
   - 23: {fileID: 2347288}
   - 114: {fileID: 11445576}
   - 54: {fileID: 5414776}
+  - 114: {fileID: 11410098}
+  - 114: {fileID: 11465454}
   m_Layer: 2
   m_Name: Cube
   m_TagString: SugarcaneFarm
@@ -152,12 +153,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &11402774
+--- !u!114 &11410098
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 147410}
+  m_GameObject: {fileID: 194098}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d50860bbc7031ba4b85f30dfacfb2cf1, type: 3}
@@ -174,6 +175,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfa29d7dbc8ff064fbdc503a7524953b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LinkFlag: 0
+--- !u!114 &11465454
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3d918551dc86f4eaf77864df840b63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   LinkFlag: 0

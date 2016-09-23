@@ -9,24 +9,17 @@ public class LinkSugarandBrawn : MonoBehaviour {
         LinkFlag = false;
 	}
 
-    void Update()
-    {
-    }
-
     void OnTriggerStay(Collider factory)
     {
-        Debug.Log(factory.gameObject.tag);
-        Debug.Log(LinkFlag);
-
-        if (LinkFlag == false && factory.gameObject.tag == "BrawnSugarFactroy")
-        {
-            Debug.Log("Hello, world!");
-
+        if (LinkFlag == false && factory.gameObject.tag == "BrownSugarFactroy")
+        { 
             LinkFlag = true;
-
-            this.transform.parent.GetComponent<sugarcane>().BrawnSugarFactory = factory.transform.parent.gameObject;
-
-            this.transform.parent.GetComponent<sugarcane>().FactoryFlag = true;
+            if (this.GetComponent<sugarcane>().BrawnSugarFactory != null && this.GetComponent<sugarcane>().BrawnSugarFactory.tag == "RumFactory") ;
+            else
+            {
+                this.GetComponent<sugarcane>().BrawnSugarFactory = factory.gameObject;
+                this.GetComponent<sugarcane>().FactoryFlag = true;
+            }
         }
     }
 }
