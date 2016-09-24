@@ -21,6 +21,7 @@ public class ConstructButton : MonoBehaviour {
 
     public void ClickOn()
     {
+        Destroy(STATIC_SPACE.StaticValue.ConstructFacility);
         STATIC_SPACE.StaticValue.ConstructionFlag = true;
         NowCreate = Instantiate(Facility);
         STATIC_SPACE.StaticValue.ConstructFacility = NowCreate;

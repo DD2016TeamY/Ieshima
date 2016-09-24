@@ -42,6 +42,7 @@ namespace CONSTATIC_SPACE
 
         public const int Wind_PowerGeneratorCost = 500;    //風力発電機のコスト
         public const int ConstructionTime_of_Wind_PowerGenerator = 6;   //風力発電機の建設期間
+        public const int Wind_PowerGeneratorRunningCost = 300;  //風力発電機の維持費
         public const int WindPowerGenerate = 400;  //風力発電機の電力
 
         public const int BrownSugarFactoryCost = 500;  //黒糖工場のコスト

@@ -7,6 +7,8 @@ public class TobaccoFactory : FactoryClass
 {
 
     public int TobaccoGrowth; //工場に入ってくるタバコ
+    private int WindFarms;
+
 
     // Use this for initialization
     void Start()
@@ -23,7 +25,12 @@ public class TobaccoFactory : FactoryClass
         {
             if (CheckChangeMonth())
             {
-                STATIC_SPACE.StaticValue.NationalTreasury += (TobaccoGrowth * CONSTATIC_SPACE.ConstaticValue.Price_of_Tobacco);
+                GetPower = WindFarms * CONSTATIC_SPACE.ConstaticValue.WindPowerGenerate;
+                SetPower();
+                if (GetPower >= CONSTATIC_SPACE.ConstaticValue.NeedPower_to_RunTobaccoFactory)
+                {
+                    STATIC_SPACE.StaticValue.NationalTreasury += (TobaccoGrowth * CONSTATIC_SPACE.ConstaticValue.Price_of_Tobacco);
+                }
                 TobaccoGrowth = 0;
                 PayCost(CONSTATIC_SPACE.ConstaticValue.TobaccoFactoryRunningCost);
             }
@@ -38,6 +45,15 @@ public class TobaccoFactory : FactoryClass
                     ConstructedFlag = true;
                 }
             }
+        }
+        WindFarms = 0;
+    }
+
+    void OnTriggerStay(Collider windfarm)
+    {
+        if (windfarm.gameObject.tag == "WindFarm")
+        {
+            WindFarms++;
         }
     }
 }
