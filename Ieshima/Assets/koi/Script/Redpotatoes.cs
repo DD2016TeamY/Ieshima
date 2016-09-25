@@ -19,6 +19,12 @@ public class Redpotatoes : FarmClass
     {
         if (CheckChangeMonth())
         {
+            if(PurupuruFactory == null)
+            {
+                FactoryFlag = false;
+                this.gameObject.GetComponent<LinkPurupuru>().LinkFlag = false;
+            }
+
             GrowUp();
 
             if (CheckHarvestDay())

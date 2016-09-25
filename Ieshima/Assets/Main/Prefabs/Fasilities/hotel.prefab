@@ -30,6 +30,7 @@ GameObject:
   - 4: {fileID: 499240}
   - 54: {fileID: 5424874}
   - 65: {fileID: 6580206}
+  - 114: {fileID: 11497904}
   m_Layer: 0
   m_Name: hotel
   m_TagString: Untagged
@@ -162,12 +163,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08f4ad88b3ada3b40bfb54236b885ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CheckNowMonth: 0
-  ConstructionTime: -1
   GetPower: 0
-  Wind_PowerGeneratorFlag: 0
-  ConstructedFlag: 0
-  Wind_PowerGenerators: []
+--- !u!114 &11497904
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d18cd746342d95f42b095fb6acc12942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -32,7 +32,7 @@ namespace STATIC_SPACE
 
         void Update()
         {
-            Debug.Log(ContractHamahimoDenryokuFlag);
+           // Debug.Log(DestroyFlag);
         }
     }
 }

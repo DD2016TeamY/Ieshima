@@ -5,7 +5,7 @@ namespace CONSTATIC_SPACE
 {
     public class ConstaticValue : MonoBehaviour
     {
-        public const int NationalCost = 10;    //国民の生活費
+        public const int NationalCost = 1;    //国民の生活費
 
         public const float Scale_of_MarathonTournament = 2.0f; //マラソン大会の規模
         public const float Scale_of_SeaGodFestival = 3.0f; //海神祭の規模
