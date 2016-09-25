@@ -5,7 +5,7 @@ namespace CONSTATIC_SPACE
 {
     public class ConstaticValue : MonoBehaviour
     {
-        public const int NationalCost = 10;    //国民の生活費
+        public const int NationalCost = 1;    //国民の生活費
 
         public const float Scale_of_MarathonTournament = 2.0f; //マラソン大会の規模
         public const float Scale_of_SeaGodFestival = 3.0f; //海神祭の規模
@@ -42,6 +42,7 @@ namespace CONSTATIC_SPACE
 
         public const int Wind_PowerGeneratorCost = 500;    //風力発電機のコスト
         public const int ConstructionTime_of_Wind_PowerGenerator = 6;   //風力発電機の建設期間
+        public const int Wind_PowerGeneratorRunningCost = 300;  //風力発電機の維持費
         public const int WindPowerGenerate = 400;  //風力発電機の電力
 
         public const int BrownSugarFactoryCost = 500;  //黒糖工場のコスト

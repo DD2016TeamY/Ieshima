@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 433846}
   - 54: {fileID: 5429368}
   - 65: {fileID: 6532826}
+  - 114: {fileID: 11423904}
   m_Layer: 0
   m_Name: sugarcane
   m_TagString: Untagged
@@ -166,6 +167,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FactoryFlag: 0
   BrawnSugarFactory: {fileID: 0}
+--- !u!114 &11423904
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d18cd746342d95f42b095fb6acc12942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11445576
 MonoBehaviour:
   m_ObjectHideFlags: 1
