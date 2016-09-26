@@ -11,6 +11,10 @@ TagManager:
   - BrownSugarFactroy
   - RumFactory
   - TobaccoFactory
+  - PurupuruFactory
+  - Hotel
+  - LilyGarden
+  - WindFarm
   layers:
   - Default
   - TransparentFX

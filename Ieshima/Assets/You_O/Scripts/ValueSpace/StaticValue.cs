@@ -22,6 +22,7 @@ namespace STATIC_SPACE
         public static bool ConstructionFlag = false;    //建築フラグ
         public static bool DestroyFlag = false; //破壊フラグ
         public static GameObject ConstructFacility; //建築する建物
+        public static bool IsRayHitGround = false;
 
         void Start()
         {
@@ -31,6 +32,7 @@ namespace STATIC_SPACE
 
         void Update()
         {
+           // Debug.Log(DestroyFlag);
         }
     }
 }

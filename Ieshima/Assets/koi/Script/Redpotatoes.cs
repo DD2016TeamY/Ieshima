@@ -19,6 +19,12 @@ public class Redpotatoes : FarmClass
     {
         if (CheckChangeMonth())
         {
+            if(PurupuruFactory == null)
+            {
+                FactoryFlag = false;
+                this.gameObject.GetComponent<LinkPurupuru>().LinkFlag = false;
+            }
+
             GrowUp();
 
             if (CheckHarvestDay())
@@ -26,6 +32,7 @@ public class Redpotatoes : FarmClass
                 if (FactoryFlag == true)
                 {
                     PurupuruFactory.GetComponent<PurupuruFactory>().RedpotatoGrowth = ProduceGrowth;
+                    Reset(CONSTATIC_SPACE.ConstaticValue.HarvestDays_of_RedPotato);
                 }
                 else
                 {

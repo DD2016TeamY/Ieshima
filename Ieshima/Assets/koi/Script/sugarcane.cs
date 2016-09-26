@@ -16,14 +16,17 @@ public class sugarcane : FarmClass
     // Update is called once per frame
     void Update()
     {
-        if(BrawnSugarFactory == null)
-        {
-            FactoryFlag = false;
-        }
-
         if (CheckChangeMonth())
         {
+            if (BrawnSugarFactory == null)
+            {
+                FactoryFlag = false;
+                this.gameObject.GetComponent<LinkSugarandBrawn>().LinkFlag = false;
+                this.gameObject.GetComponent<LinkSugarandRum>().LinkFlag = false;
+            }
+
             GrowUp();
+
             if (CheckHarvestDay())
             {
                 if (FactoryFlag == true && BrawnSugarFactory != null)

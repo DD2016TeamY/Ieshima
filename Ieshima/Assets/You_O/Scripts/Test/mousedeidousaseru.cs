@@ -50,11 +50,17 @@ public class mousedeidousaseru : MonoBehaviour
                 // hitした位置を格納する
                 else if (hit.collider.gameObject.tag == "Ground")
                 {
+                    STATIC_SPACE.StaticValue.IsRayHitGround = true;
                     hitPoint = hit.point;
+                }
+                else
+                {
+                    STATIC_SPACE.StaticValue.IsRayHitGround = false;
                 }
             }
             else
             {
+                STATIC_SPACE.StaticValue.IsRayHitGround = false;
                 return;
             }
 

@@ -9,7 +9,7 @@ public class ObjectCopy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && STATIC_SPACE.StaticValue.ConstructionFlag)
+        if (Input.GetMouseButtonDown(0) && STATIC_SPACE.StaticValue.ConstructionFlag && STATIC_SPACE.StaticValue.IsRayHitGround)
         {
             NowCreate = (GameObject)Instantiate(ToCreate, this.transform.position, this.transform.rotation);
             STATIC_SPACE.StaticValue.ConstructionFlag = false;
