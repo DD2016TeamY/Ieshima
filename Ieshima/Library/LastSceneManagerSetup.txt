@@ -1,4 +1,22 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+sceneSetups:
+- path: Assets/koi/scene/king.unity
+=======
+<<<<<<< HEAD
+sceneSetups:
+- path: Assets/sunakawa/scene/abcd.unity
+=======
+<<<<<<< HEAD
+sceneSetups: []
+=======
 sceneSetups:
 - path: Assets/You_O/Scene/you.unity
+>>>>>>> a7ec3ba193f9563b8f909f5d480e26f9deccaee5
+>>>>>>> 989df629a91241ad8ec1c75d6f9c7bcd52db6125
+=======
+sceneSetups:
+- path: Assets/You_O/Scene/you.unity
+>>>>>>> 786d3a431e25f7ce0c3359493b6f1450d03b6545
   isLoaded: 1
   isActive: 1
