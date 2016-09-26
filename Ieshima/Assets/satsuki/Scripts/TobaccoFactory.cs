@@ -3,20 +3,23 @@ using System.Collections;
 using STATIC_SPACE;
 using CONSTATIC_SPACE;
 
-public class TobaccoFactory : FactoryClass {
+public class TobaccoFactory : FactoryClass
+{
 
     public int TobaccoGrowth; //工場に入ってくるタバコ
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         TobaccoGrowth = 0;
         PayCost(CONSTATIC_SPACE.ConstaticValue.TobaccoFactoryCost);
         ConstructionTime = CONSTATIC_SPACE.ConstaticValue.ConstructionTime_of_TobaccoFactory;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (ConstructedFlag) 
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (ConstructedFlag)
         {
             if (CheckChangeMonth())
             {
@@ -24,33 +27,17 @@ public class TobaccoFactory : FactoryClass {
                 TobaccoGrowth = 0;
                 PayCost(CONSTATIC_SPACE.ConstaticValue.TobaccoFactoryRunningCost);
             }
-            else 
+        }
+        else
+        {
+            if (CheckChangeMonth())
             {
-                if (CheckChangeMonth())
+                DecreaseConstructionTime();
+                if (ConstructionTime <= 0)
                 {
-                    DecreaseConstructionTime();
-                    if (ConstructionTime <= 0)
-                    {
-                        ConstructedFlag = true;
-                    }
+                    ConstructedFlag = true;
                 }
             }
         }
-
-	}
-
-    void OnTriggerEnter(Collider TobaccoFarm)
-    {
-        if (TobaccoFarm.gameObject.tag == "TobaccoFarm")
-        {
-
-            Debug.Log("B");
-
-            TobaccoFarm.gameObject.GetComponent<Tobaccofield>().TobaccoFactory = this.gameObject;
-
-            TobaccoFarm.gameObject.GetComponent<Tobaccofield>().FactoryFlag = true;
-        }
-
     }
-
 }

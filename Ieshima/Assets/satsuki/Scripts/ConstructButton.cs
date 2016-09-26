@@ -24,7 +24,5 @@ public class ConstructButton : MonoBehaviour {
         STATIC_SPACE.StaticValue.ConstructionFlag = true;
         NowCreate = Instantiate(Facility);
         STATIC_SPACE.StaticValue.ConstructFacility = NowCreate;
-        Debug.Log(100);
-
     }
 }

@@ -18,7 +18,7 @@ namespace CONSTATIC_SPACE
         public const int Price_of_Sugarcane = 10;  //サトウキビの値段
         public const int Price_of_BrownSugar = 15; //黒糖の値段
         public const int BuildingPiliod_of_Rum = 12;    //ラム酒の醸造期間
-        public const int Price_of_Rum = 100;   //ラム酒の値段
+        public const int Price_of_Rum = 20;   //ラム酒の値段
 
         public const int LeafTobaccoFarmCost = 100;    //葉タバコ畑のコスト
         public const int HarvestDays_of_LeafTobacco = 12;  //葉タバコの収穫期間
