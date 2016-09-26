@@ -17,6 +17,12 @@ public class Tobaccofield : FarmClass
     {
         if (CheckChangeMonth())
         {
+            if(TobaccoFactory == null)
+            {
+                FactoryFlag = false;
+                this.gameObject.GetComponent<LinkTobacco>().LinkFlag = false;
+            }
+
             GrowUp();
             if (CheckHarvestDay())
             {

@@ -30,6 +30,7 @@ GameObject:
   - 4: {fileID: 494182}
   - 54: {fileID: 5407228}
   - 65: {fileID: 6569422}
+  - 114: {fileID: 11451118}
   m_Layer: 0
   m_Name: rum
   m_TagString: Untagged
@@ -134,7 +135,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 171482}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 5}
@@ -151,6 +152,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &11451118
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 171906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d18cd746342d95f42b095fb6acc12942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11485892
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -162,8 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c4e39c83fdb4e542b0e8c8e7c340c6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Wind_PowerGeneratorFlag: 0
-  Wind_PowerGenerators: []
+  GetPower: 0
   SugarcaneGrowth: 0
   FermentDays: 0
 --- !u!1001 &100100000

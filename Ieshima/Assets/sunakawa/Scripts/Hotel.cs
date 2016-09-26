@@ -5,6 +5,7 @@ using CONSTATIC_SPACE;
 
 public class Hotel : FactoryClass
 {
+    private int WindFarms;
 
     // Use this for initialization
     void Start()
@@ -19,12 +20,16 @@ public class Hotel : FactoryClass
     // Update is called once per frame
     void Update()
     {
-        SetPower();
         if (ConstructedFlag)
         {
-            if (CheckChangeMonth() && GetPower > CONSTATIC_SPACE.ConstaticValue.NeedPower_to_RunHotel)
+            if (CheckChangeMonth()/* && GetPower > CONSTATIC_SPACE.ConstaticValue.NeedPower_to_RunHotel*/)
             {
-                Gain();
+                GetPower = WindFarms * CONSTATIC_SPACE.ConstaticValue.WindPowerGenerate;
+                SetPower();
+                if (GetPower >= CONSTATIC_SPACE.ConstaticValue.NeedPower_to_RunHotel)
+                {
+                    Gain();
+                }
                 PayCost(CONSTATIC_SPACE.ConstaticValue.HotelRunningCost);
             }
         }
@@ -39,11 +44,21 @@ public class Hotel : FactoryClass
 
             }
         }
+
+        WindFarms = 0;
     }
 
     void Gain()
     {
-        STATIC_SPACE.StaticValue.NationalTreasury = (int)(STATIC_SPACE.StaticValue.TourismNumber_of_Facilities * STATIC_SPACE.StaticValue.Tourists *
+        STATIC_SPACE.StaticValue.NationalTreasury += (int)(STATIC_SPACE.StaticValue.TourismNumber_of_Facilities * STATIC_SPACE.StaticValue.Tourists *
                                                     (STATIC_SPACE.StaticValue.EventsScale + 1));
+    }
+
+    void OnTriggerStay(Collider windfarm)
+    {
+        if (windfarm.gameObject.tag == "WindFarm")
+        {
+            WindFarms++;
+        }
     }
 }
